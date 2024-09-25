@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Veterinária</title>
+</head>
+<body>
+    <main>
+        <h1>CLÍNICA VETERINÁRIA</h1>
+        <article>
+            <section class="cadastro">
+                <h2>Agende agora seu bichinho</h2>
+                <form>
+                    <input type="text" placeholder="Espécie" id="especieAnimal" class="formulario">
+                    <input type="text" placeholder="Idade real / presumida" id="idadeAnimal" class="formulario">
+                    <input type="text" placeholder="Raça" id="racaAnimal" class="formulario">
+                    <select placeholder="Sexo" id="sexoAnimal" class="formulario">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                    <p class="msgErro"></p>
+                    <button type="submit" id="botaoAdiciona" class="botaoAgenda">Agendar</button>
+                </form>
+            </section>
+            <section class="informacoesAgendamento">
+                <h2>Sua consulta está marcada</h2>
+                <p class="infoAgenda"></p>
+                <p class="dataAgendada"></p>
+                <p class="msgIncentivo"></p>
+            </section>
+        </article>
+    </main>
+</body>
+<script type="module" src="./veterinaria.js"></script>
+</html>

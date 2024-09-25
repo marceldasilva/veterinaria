@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --corCorpo: rgb(60, 11, 100);
+    --corTitulo: rgb(107, 16, 226);
+}
+
+/* corpo */
+main {
+    background: var(--corCorpo);
+}
+
+main > h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+/* artigo */
+article {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/* sections */
+section {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+}
+
+section.cadastro {
+    opacity: .8;
+    height: 420px;
+    width: 250px;
+    border: 1px solid white;
+}
+
+section.cadastro > h2,
+section.informacoesAgendamento > h2 {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+section.informacoesAgendamento {
+    opacity: .8;
+    height: 420px;
+    width: 250px;
+    margin: 15px 0px;
+    border: 1px solid white;
+}
+
+/* formulário */
+.formulario {
+    width: 90%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.574);
+    margin-bottom: 12px;
+    margin-left: 3px;
+    font-weight: bold;
+    text-indent: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.502);
+}
+
+.formulario:focus {
+    background: white;
+    outline: none;
+}
+
+.formulario:hover {
+    background: white;
+}
+
+/* mensagem de erro */
+p.msgErro {
+    font-size: .9em;
+    text-align: center;
+    color: red;
+    margin-bottom: 7px;
+}
+
+/* botão */
+#botaoAdiciona {
+    display: block;
+    margin: 0 auto;
+    background: var(--corCorpo);
+    color: white;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.543);
+    cursor: pointer;
+    position: relative;
+}
+
+#botaoAdiciona:hover {
+    background: var(--corTitulo);
+    padding: 20px 45px;
+    border-radius: 20px;
+    transition: .5s ease-out;
+}
+
+/* mensagem de informações */
+p.infoAgenda {
+    color: white;
+    margin: 0px 5px 10px 5px;
+    font-size: 1em;
+}
+
+p.dataAgendada {
+    color: white;
+    margin: 0px 5px 10px 5px;
+    font-size: 1em;
+}
+
+p.msgIncentivo {
+    color: white;
+    margin: 0px 5px 10px 5px;
+    font-size: 1em;
+}
